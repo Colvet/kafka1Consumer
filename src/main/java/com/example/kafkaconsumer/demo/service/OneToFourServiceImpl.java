@@ -23,7 +23,7 @@ public class OneToFourServiceImpl implements OneToFourService {
     @Override
     public JSONArray getURL(String filename) {
         try {
-            String requestUrl = "http://59.29.224.136:8099/file/readfile/" + filename;
+            String requestUrl = "http://localhost:8099/file/readfile/" + filename;
 
             URL url = new URL(requestUrl);
 
