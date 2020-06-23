@@ -1,4 +1,7 @@
 package com.example.kafkaconsumer.demo.service;
+import org.json.JSONArray;
 
-public class OneToFourService {
+public interface OneToFourService {
+
+        JSONArray getURL(String filename);
 }

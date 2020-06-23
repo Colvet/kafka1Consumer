@@ -4,8 +4,10 @@ server:
 spring:
   kafka:
     consumer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: 59.29.224.136:9092
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       group-id: file-events-listener-group
+      auto-offset-reset: latest
+      enable-auto-commit: false
 
